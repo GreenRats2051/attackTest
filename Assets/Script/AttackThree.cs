@@ -1,13 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class AttackThree : MonoBehaviour, IStratergy
+namespace Scripts
 {
-    [SerializeField] private int damage;
-
-    public void Attack()
+    public class AttackThree : IStratergy
     {
-        Debug.Log($"You attacked and caused {damage} damage. This is the third attack!");
+        private int damage;
+
+        public AttackThree(int damage)
+        {
+            this.damage = damage;
+        }
+
+        public void Attack()
+        {
+            Debug.Log($"You attacked and caused {damage} damage. This is the third attack!");
+        }
     }
 }

@@ -1,8 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public interface IStratergy
+namespace Scripts
 {
-    void Attack();
+    public interface IStratergy
+    {
+        void Attack();
+    }
 }
